@@ -2,12 +2,12 @@
 session_start();
 $_SESSION["tab"] = "Add User";
 
-if($_SESSION["login"] != 1)
+if ($_SESSION["login"] != 1)
   echo '<h2 txtcolor="red">Authentication Error!!!</h2>';
-else{
+else {
   include_once('header.php');
 
-		###########contents of div goes here###########
+  ###########contents of div goes here###########
   echo '
   <form name="addUser" action = "addUser.php"  method = "POST">
   <h2>Add User</h2>
@@ -38,7 +38,6 @@ else{
   <button class="btn">Create User</button>
   </p>
   </form>';
-		##################################################
+  ##################################################
   include_once('footer.php');
 }
-?>
